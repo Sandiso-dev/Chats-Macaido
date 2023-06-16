@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import {ChatsContext} from "../contextApi/ChatsContext"
-import Cam from '../photos/cam.png'
+
 import Add from '../photos/add.png'
 import { Messages } from './Messages'
 import {Input} from './Input'

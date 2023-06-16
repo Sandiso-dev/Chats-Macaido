@@ -24,10 +24,15 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 
 //Login and Register styles
 
 .formContainer{
+    background: url(./photos/register.jpg);
     background-color: #a7bcff;
     height: 100vh;
     display: flex;
@@ -106,6 +111,7 @@ body{
 
 .home{
     background-color: #1e1e22;
+    background: url(./photos/back.jpg);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -141,6 +147,7 @@ body{
 
                 @include mobile{
                     width: 77%;
+                    overflow: hidden;
                 }
               
 
@@ -210,7 +217,7 @@ body{
               
 
                @include mobile{
-                width: 85%;
+                width: 10%;
             }
                
               
@@ -226,6 +233,8 @@ body{
                     border-radius: 50%;
                     background-color: #a7bcff;
                     object-fit: cover;
+
+                    
                 }
 
                 .userInfo{
@@ -238,6 +247,11 @@ body{
                     p{
                         font-size: 15px;
                         color: white;
+
+                        @include mobile{
+                        display:none;
+
+                        }
 
                         
                         &:hover{
@@ -258,9 +272,7 @@ body{
             margin-bottom: 45px;
             border-radius: 10px;
 
-            @include mobile{
-                display: none;
-            }
+           
             
             
             .chatInfo{
@@ -332,7 +344,7 @@ body{
                             max-width: max-content;
                         }
                         img{
-                            width: 80%;
+                            width: 50%;
                         }
                     }
 

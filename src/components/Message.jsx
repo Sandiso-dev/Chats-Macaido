@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import { AuthContext } from '../contextApi/AuthContext'
 import { ChatsContext } from '../contextApi/ChatsContext'
 import {useContext} from 'react'
-import Pic from '../photos/3.jpg'
+
 
 export const Message = ({message}) => {
 

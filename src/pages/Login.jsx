@@ -20,7 +20,7 @@ export const Login = () => {
   const handleSubmit = async (event) =>{
     
     event.preventDefault()
-    const displayName = event.target[0].value;
+    const email = event.target[0].value;
     const password = event.target[1].value;
   
 
@@ -28,7 +28,7 @@ export const Login = () => {
 
 try{
   //sign in with email and password method from firebase
-  await signInWithEmailAndPassword(auth, displayName, password);
+  await signInWithEmailAndPassword(auth, email, password);
   navigate("/")
 
 }catch(erro){
@@ -46,7 +46,7 @@ setErr(true)
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
         
-            <input type="text" placeholder='Your username bestie'/>
+            <input type="email" placeholder='Your email besty'/>
             <input type="password" placeholder='then Your Password' />
             <button>Sign in</button>
         </form>
