@@ -141,9 +141,10 @@ body{
             overflow: scroll;
 
             @include mobile {
-                margin-bottom: 0;
-                height: 60%;
-                width: 90%;
+                margin-top: 0;
+                margin-left: 2;
+                height: 65%;
+                width: 92%;
                 padding: 6px;
                 border-radius: 17px;
             }
@@ -186,7 +187,7 @@ body{
                     }
 
                     button{
-                        background-color:rgb(20, 19, 19);
+                        background-color:#5d5b8d;
                         color: #ddddf7;
                         font-size: 13px;
                         padding: 7px 9px;
@@ -226,16 +227,7 @@ body{
                     }
                 }
             }
-
-            .chats{
-                @include mobile{
-                    width: 90%;
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr;
-                    overflow: scroll;
-                }
-
-                
+            
             .userChat{
                 padding: 9px;
                 display: flex;
@@ -250,6 +242,7 @@ body{
 
                @include mobile {
                 padding: 5px;
+               
 
                }
               
@@ -300,7 +293,19 @@ body{
                     }
                 }
             }
+
+
+
+            .chats{
+                @include mobile{
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    overflow: scroll;
+                }
             }
+
+
 
 
         }
@@ -315,7 +320,7 @@ body{
             border-radius: 10px;
 
             @include mobile {
-                margin-top: -112px;
+                margin-top: -95px;
             }
 
            
