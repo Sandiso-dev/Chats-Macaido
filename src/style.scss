@@ -117,6 +117,8 @@ body{
     align-items: center;
     justify-content: center;
 
+   
+
     .container{
         border: 1px solid rgb(51, 47, 47);
         width: 100%;
@@ -124,6 +126,11 @@ body{
         display: flex;
         overflow: hidden;
         position: relative;
+
+        @include mobile{
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+         }
 
         .sidebar{
             flex: 1.5;
@@ -133,12 +140,20 @@ body{
             background-color: #1e1e22;
             overflow: scroll;
 
+            @include mobile {
+                margin-bottom: 0;
+                height: 60%;
+                width: 90%;
+                padding: 6px;
+                border-radius: 17px;
+            }
+
     
             .navbar{
                 display: flex;
                 align-items: center;
                 background-color: #1e1e22;
-                height: 66px;
+                height: 56px;
                 padding: 12px;
                 justify-content: space-between;
                 color: white;
@@ -148,6 +163,7 @@ body{
                 @include mobile{
                     width: 77%;
                     overflow: hidden;
+
                 }
               
 
@@ -156,6 +172,10 @@ body{
                 .user{
                     display: flex;
                     gap: 10px;
+
+                    @include mobile {
+                        gap: 7px;
+                    }
                    
 
                     img{
@@ -173,6 +193,10 @@ body{
                         border: none;
                         border-radius: 5px;
                         cursor: pointer;
+
+                        @include mobile {
+                            padding: 5px 7px;
+                        }
                     }
                 }
 
@@ -203,6 +227,15 @@ body{
                 }
             }
 
+            .chats{
+                @include mobile{
+                    width: 90%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    overflow: scroll;
+                }
+
+                
             .userChat{
                 padding: 9px;
                 display: flex;
@@ -214,11 +247,14 @@ body{
                margin-top: 10px;
                border-radius: 24px;
                border: 1px solid #5d5b8d;
+
+               @include mobile {
+                padding: 5px;
+
+               }
               
 
-               @include mobile{
-                width: 10%;
-            }
+              
                
               
 
@@ -242,6 +278,10 @@ body{
                         font-size: 18px;
                         font-weight: bolder;
 
+                        @include mobile{
+                            font-size: 13px;
+                        }
+
                     }
 
                     p{
@@ -260,6 +300,8 @@ body{
                     }
                 }
             }
+            }
+
 
         }
 
@@ -271,6 +313,10 @@ body{
             margin-top: 35px;
             margin-bottom: 45px;
             border-radius: 10px;
+
+            @include mobile {
+                margin-top: -112px;
+            }
 
            
             
@@ -367,7 +413,7 @@ body{
 
             .input{
                 height: 55px;
-                background-color:transparent;
+                background-color:rgb(216, 211, 211);
                 padding: 10px;
                 display: flex;
                 align-items: center;
@@ -380,7 +426,7 @@ body{
                     border: none;
                     outline: none;
                     background-color: transparent;
-                    color: #9a9a9c;
+                    color: #333335;
                     font-size: 17px;
                     
 
