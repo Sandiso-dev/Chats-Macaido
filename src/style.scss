@@ -321,7 +321,11 @@ body{
 
             @include mobile {
                 margin-top: -95px;
+                width: 460px;
+                overflow: scroll;
+                margin-bottom: 0px;
             }
+
 
            
             
@@ -362,6 +366,7 @@ body{
                 overflow: scroll;
                 border-radius: 25px;
                 border: 1.5px solid #5d5b8d ;
+                
 
                 .message{
                     display: flex;
