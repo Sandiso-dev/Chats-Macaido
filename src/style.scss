@@ -161,6 +161,16 @@ body{
                 width: 92%;
                 padding: 6px;
                 border-radius: 17px;
+                overflow: hidden;
+            }
+            @include smaller-mobile {
+                margin-top: 0;
+                margin-left: 1;
+                height: 63%;
+                width: 89%;
+                padding: 4px;
+                border-radius: 17px;
+                overflow: hidden;
             }
 
     
@@ -334,7 +344,7 @@ body{
             border-radius: 10px;
 
             @include mobile {
-                margin-top: -95px;
+                margin-top: -90px;
                 margin-right: 2px;
                 width: 327px;
                 overflow: scroll;

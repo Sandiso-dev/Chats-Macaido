@@ -42,7 +42,7 @@ setErr(true)
   return (
     <div className="formContainer">
     <div className="formWrapper">
-        <span className="logo">Don Chats</span>
+        <span className="logo">Chathub Macaido</span>
         <span className="title">Login</span>
         <form onSubmit={handleSubmit}>
         
