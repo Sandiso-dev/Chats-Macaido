@@ -8,6 +8,20 @@
     }
 };
 
+@mixin medium-mobile {
+    @media screen and (max-width: 414px){
+        @content;
+    }
+};
+
+@mixin smaller-mobile {
+    @media screen and (max-width: 320px){
+        @content;
+    }
+};
+
+
+
 @mixin table {
     @media screen and (max-width:768px){
         @content
@@ -325,6 +339,16 @@ body{
                 width: 327px;
                 overflow: scroll;
                 margin-bottom: 0px;
+            }
+
+            @include smaller-mobile {
+                width: 300px;
+            
+            }
+
+            @include medium-mobile {
+                width: 360px;
+            
             }
 
 
